@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru" style="--scroll-fixed-width:1189px; --layout-width:1076px;">
+
+<head>
+    <title>Автошкола СФУ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__row">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div class="header__space"></div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="../Без авторизации/О нас/Сотрудники/index.html" class="header__link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="../Без авторизации/Услуги/index.html" class="header__link">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="../Без авторизации/Контакты/index.html" class="header__link">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="../Без авторизации/Записаться в автошколу/index.html"
+                                class="header__link">Записаться в автошколу</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__btn">Войти</a>
+            </div>
+        </header>
+        <main class="content">
+            <div class="content__title">
+                <img src="img/title.svg" alt="" class="title__vector">
+                <h1 class="title__text">Вход</h1>
+            </div>
+            <div class="container">
+                <div class="content__row">
+                    <form onsubmit="return verifyPassword()" class="content__input"
+                        action="../Курсанту/Профиль/index.html">
+
+                        <input type="username" id="usr" class="input__item input__login" required name="login"
+                            placeholder="Логин" minlength="8" value="">
+
+                        <input type="password" id="pswd" value="" class="input__item input__password"
+                            placeholder="Пароль">
+                        <span id="message" style="color:orange"> </span>
+                        <input class="input__button" type="submit" value="Войти">
+                        <div class="input__inscription">
+                            <div class="inscription__item">*</div>
+                            <div class="inscription__text">Логин и пароль для входы вы можете получить у администратора
+                                при записи в автошколу</div>
+                        </div>
+                    </form>
+                    <img src="img/car.png" class="content__img" alt="car">
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__row">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div class="footer__menu">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#" class="footer__link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <div class="info__number">
+                        +7 (920) 988-88-88
+                    </div>
+                    <div class="info__address">
+                        г.Красноярск, ул.Киренского 109
+                    </div>
+                </div>
+                <div class="footer__buttons">
+                    <a href="#" class="footer__link">Войти</a>
+                    <a href="#" class="footer__link-item">Записаться в автошколу</a>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__icons">
+                        <a href="#" class="footer__icon footer__mail">@</a>
+                        <a href="#" class="footer__icon footer__vk">vk</a>
+                    </div>
+                    <div class="footer__copyright">©2023</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
